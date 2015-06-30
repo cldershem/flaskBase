@@ -4,7 +4,7 @@
 manage.py
 ~~~~~~~~~~~~~~~~~
 
-Baremetal/maintence for application.
+Baremetal/maintenance for application.
 
 :copyright: (c) 2015 by Cameron Dershem.
 :license: see TOPMATTER
