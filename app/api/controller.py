@@ -38,4 +38,4 @@ def api():
         success=False,
         error="API not yet implemented"
         )
-    return result.to_json()
+    return result.to_json(), 501
