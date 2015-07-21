@@ -13,7 +13,7 @@ Controller for the api
 from flask import Blueprint, jsonify
 
 
-mod = Blueprint('api', __name__, url_prefix='/api/v1/')
+mod = Blueprint('api', __name__, url_prefix='/api/v1')
 
 
 class Response():
