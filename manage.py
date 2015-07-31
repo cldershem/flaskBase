@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 manage.py
@@ -52,10 +52,14 @@ def populate_db():
     """
     Populates db from yaml source.
     """
-    # import yaml
     # from app.models import *
     from app import db
-    # root = './tmp/data/'
+    import os
+
+    dev_db = './tmp/dev.sqlite'
+
+    if os.path.isfile(dev_db):
+        os.rename(dev_db, dev_db + '.bak')
 
     db.create_all()
 

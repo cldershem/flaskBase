@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 api.controller.py
@@ -10,19 +10,25 @@ Controller for the api
 :license: see TOPMATTER
 :source: github.com/cldershem/$SOME_REPO
 """
-from flask import Blueprint, jsonify
-
-
-mod = Blueprint('api', __name__, url_prefix='/api/v1')
+from flask import jsonify
+from . import api
 
 
 class Response():
     """
     """
-    def __init__(self, success=False, data=None, error=None):
+    def __init__(self, success=False, data=None, error=None,
+                 page=None, **kwargs):
         self.success = success
-        self.data = data
-        self.error = error
+        if error:
+            self.error = error
+        if data:
+            self.data = data
+        if page:
+            self.page = page
+
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def to_json(self):
         return jsonify(self.__dict__)
@@ -32,10 +38,7 @@ class Response():
             self.success, self.data, self.error)
 
 
-@mod.route('/')
-def api():
-    result = Response(
-        success=False,
-        error="API not yet implemented"
-        )
-    return result.to_json(), 501
+@api.route('/')
+def api_index():
+    # raise api.APIError('API docs, not yet implemented.', status_code=501)
+    return Response(message='API not yet implemented.').to_json(), 501

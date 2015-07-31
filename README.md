@@ -19,10 +19,25 @@ $ clone git@gitlab.elevenfifty.com:cameron/$SOME_REPO.git
 $ cd ef-flask
 ```
 
-### Install dependencies
-Use a virtualenv.
+setup virtualenv
 ```sh
-$ pip install -r requirements.txt
+sudo apt-get install virtualenv virtualenvwrapper
+
+# Py2.7
+mkvirtualenv adamOwes
+
+# Py3
+mkvirtualenv --python=/usr/bin/python3 adamOwes-Flask3
+```
+
+### Install dependencies
+```sh
+# Py2.7
+pip install -r requirements.txt
+
+# Py3
+pip3 install -r requirements3.txt
+sudo apt-get install rabbitmq-server
 ```
 
 ### Settings
@@ -48,12 +63,31 @@ like to make the application available to your local network:
 $ python manage.py run_on_network
 ```
 
+### misc
+populate db
+```sh
+./manage.py populate_db
+```
+
+run celery
+```sh
+celery -A app worker
+```
+
+## LICENSE
+See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPE/blob/master/TOPMATTER.md#license)
+## COPYRIGHT
+See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPE/blob/master/TOPMATTER.md#copyright)
+## CONTRIBUTING
+See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPE/blob/master/TOPMATTER.md#contributing)
+
 ## TODO
 - Add License, Copyright, Contrib, etc
     - update all files with info
 - add docstrings
 - sitemap.xml
 - create makefile for this business.
+- update basic outline below
 
 
 ## Basic outline of project

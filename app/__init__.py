@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 app.py
@@ -19,8 +19,8 @@ def create_app(config_name):
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
 
-    from main import main as main_module
-    from api.controller import mod as api_module
+    from .main import main as main_module
+    from .api import api as api_module
 
     app.register_blueprint(main_module)
     app.register_blueprint(api_module)
