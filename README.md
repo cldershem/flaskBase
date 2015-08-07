@@ -15,8 +15,8 @@ On OS X or Linux (Windows, you're on your own):
 
 ### Get code
 ```sh
-$ clone git@gitlab.elevenfifty.com:cameron/$SOME_REPO.git
-$ cd ef-flask
+$ clone git@github.com:cldershem/flaskBase.git
+$ cd flaskBase
 ```
 
 setup virtualenv
@@ -24,10 +24,10 @@ setup virtualenv
 sudo apt-get install virtualenv virtualenvwrapper
 
 # Py2.7
-mkvirtualenv adamOwes
+mkvirtualenv flaskBase
 
 # Py3
-mkvirtualenv --python=/usr/bin/python3 adamOwes-Flask3
+mkvirtualenv --python=/usr/bin/python3 flaskBase
 ```
 
 ### Install dependencies
