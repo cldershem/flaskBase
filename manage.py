@@ -8,7 +8,7 @@ Baremetal/maintenance for application.
 
 :copyright: (c) 2015 by Cameron Dershem.
 :license: see TOPMATTER
-:source: github.com/cldershem/$SOME_REPM
+:source: github.com/cldershem/$SOME_REPO
 """
 from app import create_app
 from flask.ext.script import Manager

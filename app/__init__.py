@@ -8,7 +8,7 @@ This is an application.
 
 :copyright: (c) 2015 by Cameron Dershem.
 :license: see TOPMATTER
-:source: github.com/cldershem/$SOME_REP
+:source: github.com/cldershem/$SOME_REPO
 """
 from flask import Flask
 from config import config
