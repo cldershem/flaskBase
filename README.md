@@ -75,11 +75,11 @@ celery -A app worker
 ```
 
 ## LICENSE
-See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPE/blob/master/TOPMATTER.md#license)
+See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPO/blob/master/TOPMATTER.md#license)
 ## COPYRIGHT
-See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPE/blob/master/TOPMATTER.md#copyright)
+See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPO/blob/master/TOPMATTER.md#copyright)
 ## CONTRIBUTING
-See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPE/blob/master/TOPMATTER.md#contributing)
+See [`TOPMATTER.md`](https://github.com/cldershem/$SOME_REPO/blob/master/TOPMATTER.md#contributing)
 
 ## TODO
 - Add License, Copyright, Contrib, etc
